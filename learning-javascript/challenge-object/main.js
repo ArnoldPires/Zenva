@@ -12,9 +12,23 @@ window.addEventListener("load",function() {
     {
       x: 100, //x coordinate
       y: 100, //y coordinate
-      speedY: 2, //speed in Y
+      speedY: 1, //speed in Y
       w: 40, //width
       h: 40 //heght
+    },
+    {
+      x: 300,
+      y: 100,
+      speedY: 1,
+      w: 40,
+      h: 40
+    },
+    {
+      x: 140,
+      y: 300,
+      speedY: 2,
+      w: 40,
+      h: 40
     },
     {
       x: 200,
@@ -104,7 +118,6 @@ var player = {
     sprites.goal = new Image();
     sprites.goal.src = 'images/chest.png';
   };
-
   //update the logic
   var update = function() {
 
