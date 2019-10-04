@@ -21,13 +21,35 @@ showEverywere("Hello World");
 
 //Methods
 var player = {
-  x:100,
-  y: 200,
-  energy: 10,
-  weapons: ['sword,' 'gun']
-};
-player.addweapon('axe');
-player.addweapon('laser gun');
-player.addweapon('bow');
+ x: 100,
+ y: 200,
+ energy: 10,
+ weapons: ['sword', 'gun'],
+ addWeapon: function(newWeapon) {
+     this.weapons.push(newWeapon);
+ }
 
-console.log(player.weapons);
+ };
+
+ player.addWeapon('axe');
+ player.addWeapon('laser gun');
+ player.addWeapon('knife');
+
+ console.log(player.weapons);
+
+//function Expression
+var fly = function() {
+  console.log('you are flying');
+};
+fly();
+let playerx = {
+  g: 10,
+  h: 20,
+  energy: 100,
+  superpower: function() {
+    console.log('no superpower');
+  }
+};
+playerx.g = 100;
+playerx.superpower = fly;
+playerx.superpower();
