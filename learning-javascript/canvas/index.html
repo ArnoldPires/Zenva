@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Canvas</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1>Canvas</h1>
-    <canvas id="canvas" width="300" height="300"></canvas>
-  </body>
-  <script src="main.js"></script>
+<head>
+  <meta charset="utf-8">
+  <title>Canvas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Canvas</h1>
+  <canvas id="mycanvas" width="500" height="300" ></canvas>
+  <script>
+  //grab the canvas and context
+  var canvas = document.getElementById("mycanvas");
+  var ctx = canvas.getContext("2d");
+  </script>
+</body>
+<script src="main.js"></script>
 </html>
